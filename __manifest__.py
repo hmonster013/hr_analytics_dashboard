@@ -18,7 +18,7 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['hr', 'hr_attendance', 'hr_holidays'],
+    'depends': ['hr', 'hr_attendance', 'hr_holidays', 'hr_contract'],
 
     # always loaded
     'data': [
