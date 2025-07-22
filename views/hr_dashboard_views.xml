@@ -1,0 +1,14 @@
+<odoo>
+    <!-- Action mở dashboard -->
+    <record id="action_hr_analytics_dashboard" model="ir.actions.client">
+        <field name="name">HR Analytics Dashboard</field>
+        <field name="tag">hr_analytics_dashboard.dashboard</field>
+    </record>
+
+    <!-- Menu trong module HR -->
+    <menuitem id="menu_hr_analytics_dashboard"
+        parent="hr.menu_hr_root"
+        name="Analytics Dashboard"
+        action="action_hr_analytics_dashboard"
+        sequence="100"/>
+</odoo>

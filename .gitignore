@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Odoo
+*.egg-info/
+*.pot
+*.mo
+*.log
+*.db
+*.sql
+
+# VSCode & PyCharm
+.vscode/
+.idea/
+*.swp
+
+# Node/Web assets (nếu có)
+node_modules/
+*.js.map
+
+# Environment
+.env
+.env.*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Tests/artifacts
+.coverage
+coverage.xml
+
+# Odoo cache
+*.zip
+*.dist-info/
+*.pyo
+*.mypy_cache/
+
+# Backup/exports
+*.bak
+*.old
+
+# Odoo module build artifacts
+/static/lib/
+web/static/lib/

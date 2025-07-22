@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hr_analytics_dashboard_hr_analytics_dashboard,hr_analytics_dashboard.hr_analytics_dashboard,model_hr_analytics_dashboard_hr_analytics_dashboard,base.group_user,1,1,1,1
+access_hr_analytics_dashboard_hr_analytics_dashboard,hr_analytics_dashboard.hr_analytics_dashboard,access_hr_analytics_dashboard_hr_analytics_dashboard,base.group_user,1,1,1,1

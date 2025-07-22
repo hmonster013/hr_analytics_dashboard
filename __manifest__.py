@@ -23,12 +23,15 @@ Long description of module's purpose
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'views/hr_dashboard_views.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    'assets': {
+        'web.assets_backend': [
+            'hr_analytics_dashboard/static/src/js/dashboard.js',
+            'hr_analytics_dashboard/static/src/xml/dashboard.xml',
+            'hr_analytics_dashboard/static/src/js/chart_renderer.js',
+        ],
+    },
+    'application': True,
 }
 
