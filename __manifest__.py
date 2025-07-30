@@ -1,37 +1,62 @@
 # -*- coding: utf-8 -*-
 {
     'name': "HR Analytics Dashboard",
-    'version': '1.0',
-    'summary': "Custom dashboard for HR analytics in Odoo 18",
+    'version': '1.0.0',
+    'summary': "Advanced HR analytics dashboard with real-time metrics and visualizations",
 
     'description': """
-Long description of module's purpose
+HR Analytics Dashboard
+======================
+
+This module provides comprehensive HR analytics with:
+* Real-time employee metrics and KPIs
+* Interactive charts and visualizations
+* Department-wise analytics
+* Attendance and leave trends
+* Salary distribution analysis
+* Customizable date range filtering
+
+Features:
+---------
+* Employee turnover rate tracking
+* Average salary calculations by department
+* KPI scoring based on performance metrics
+* Attendance pattern analysis
+* Leave usage trends
+* Interactive dashboard with filters
     """,
 
-    'author': "My Company",
+    'author': "Your Company",
     'website': "https://www.yourcompany.com",
+    'category': 'Human Resources',
+    'license': 'LGPL-3',
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    # Dependencies
+    'depends': [
+        'hr',
+        'hr_attendance',
+        'hr_holidays',
+        'hr_contract',
+        'web'
+    ],
 
-    # any module necessary for this one to work correctly
-    'depends': ['hr', 'hr_attendance', 'hr_holidays', 'hr_contract'],
-
-    # always loaded
+    # Data files
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/hr_dashboard_views.xml',
     ],
+
+    # Frontend assets
     'assets': {
         'web.assets_backend': [
+            'hr_analytics_dashboard/static/src/js/chart_renderer.js',
             'hr_analytics_dashboard/static/src/js/dashboard.js',
             'hr_analytics_dashboard/static/src/xml/dashboard.xml',
-            'hr_analytics_dashboard/static/src/js/chart_renderer.js',
         ],
     },
+
+    'installable': True,
     'application': True,
+    'auto_install': False,
 }
 
